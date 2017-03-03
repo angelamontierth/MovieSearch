@@ -14,7 +14,8 @@
 		C3F64A391E69E6A0006B4DEE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F64A381E69E6A0006B4DEE /* Movie.swift */; };
 		C3F64A3B1E69E970006B4DEE /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F64A3A1E69E970006B4DEE /* NetworkController.swift */; };
 		C3F64A3E1E69E99C006B4DEE /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F64A3D1E69E99C006B4DEE /* MovieController.swift */; };
-		C3F64A421E69F46A006B4DEE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F64A411E69F46A006B4DEE /* SearchViewController.swift */; };
+		C3F64A451E6A0E68006B4DEE /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F64A441E6A0E68006B4DEE /* SearchTableViewController.swift */; };
+		C3F64A471E6A0E7D006B4DEE /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F64A461E6A0E7D006B4DEE /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		C3F64A381E69E6A0006B4DEE /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		C3F64A3A1E69E970006B4DEE /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		C3F64A3D1E69E99C006B4DEE /* MovieController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
-		C3F64A411E69F46A006B4DEE /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C3F64A441E6A0E68006B4DEE /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		C3F64A461E6A0E7D006B4DEE /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				C3F64A3C1E69E988006B4DEE /* Controllers */,
 				C3F64A401E69E9AB006B4DEE /* ModelControllers */,
 				C3F64A431E69F470006B4DEE /* ViewControllers */,
+				C3F64A481E6A0E81006B4DEE /* Views */,
 				C3F64A2D1E69E007006B4DEE /* Assets.xcassets */,
 				C3F64A2F1E69E007006B4DEE /* LaunchScreen.storyboard */,
 				C3F64A321E69E007006B4DEE /* Info.plist */,
@@ -100,9 +103,17 @@
 		C3F64A431E69F470006B4DEE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C3F64A411E69F46A006B4DEE /* SearchViewController.swift */,
+				C3F64A441E6A0E68006B4DEE /* SearchTableViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C3F64A481E6A0E81006B4DEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3F64A461E6A0E7D006B4DEE /* MovieTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3F64A421E69F46A006B4DEE /* SearchViewController.swift in Sources */,
 				C3F64A3E1E69E99C006B4DEE /* MovieController.swift in Sources */,
 				C3F64A391E69E6A0006B4DEE /* Movie.swift in Sources */,
+				C3F64A471E6A0E7D006B4DEE /* MovieTableViewCell.swift in Sources */,
+				C3F64A451E6A0E68006B4DEE /* SearchTableViewController.swift in Sources */,
 				C3F64A271E69E007006B4DEE /* AppDelegate.swift in Sources */,
 				C3F64A3B1E69E970006B4DEE /* NetworkController.swift in Sources */,
 			);
@@ -343,6 +355,7 @@
 				C3F64A371E69E007006B4DEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

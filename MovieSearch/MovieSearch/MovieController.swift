@@ -29,7 +29,7 @@ class MovieController {
         
         guard let unwrappedURL = baseURL else { return }
         
-        var apiKey = "79e77df6ddd71c9cc245f34dfb6220e8"
+        let apiKey = "79e77df6ddd71c9cc245f34dfb6220e8"
         
         let parameters = ["api_key": apiKey, "query": title]
         
