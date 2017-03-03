@@ -33,7 +33,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
         
         searchBar.delegate = self
         
-        var movies: Movie?
         
     //=======================================================
     // MARK: - UISearchBarDelegateFunctions
@@ -45,11 +44,11 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
             
             guard let text = searchBar.text else { return }
             
-            MovieController.searchMovies(for: text) { (movies) in
-                guard let movie = movies
+            MovieController.searchMovies(for: text) { (returnedMovie) in
+                guard let unwrappedMovie = returnedMovie
                 else { return }
                 
-                self.updateViews(movies: movies)
+                self.updateViews(movie: unwrappedMovie)
             }
             
         }
